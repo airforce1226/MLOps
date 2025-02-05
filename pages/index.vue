@@ -1,5 +1,15 @@
 <template>
-  <div>여기가 index 페이지입니다.</div>
+  <div>
+    <h1>{{ title }}</h1>
+    <p>{{ description }}</p>
+  </div>
 </template>
-<script setup lang="ts"></script>
+
+<script setup lang="ts">
+import { ref } from 'vue';
+
+const title = ref('Hello World');
+const description = ref('This is a description');
+</script>
+
 <style scoped></style>
